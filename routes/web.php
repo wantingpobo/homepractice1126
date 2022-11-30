@@ -17,5 +17,6 @@ Route::namespace ('App\Http\Controllers')->group(function () {
 
     Route::get('/', 'SiteController@index');
     Route::get('/shop', 'SiteController@shop');
+    Route::resource('/articles', 'ArticleController');
 
 });
